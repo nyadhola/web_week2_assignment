@@ -1,0 +1,113 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styled with ID Selector */
+#main-header {
+    text-align: center;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+#main-header h1 {
+    margin: 0;
+}
+
+/* Reusable class selector for card containers */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Direct Child Selector (.form-group > label) */
+.form-group > label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+/* Negation Pseudo-Class Selector (input:not([type="button"])) */
+input:not([type="button"]), select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Focus Pseudo-Class State */
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+/* Form Button Styling */
+#add-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Cursor pointer requirement */
+    font-size: 1rem;
+}
+
+#add-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Table Styling with borders collapsed */
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Descendant Selector (.expense-table th) */
+.expense-table th, 
+.expense-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Colored Header Row */
+.expense-table thead tr {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+/* Position-based Pseudo-Class (Alternating Rows) */
+.expense-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Interactive Hover State for Rows */
+.expense-table tbody tr:hover {
+    background-color: #e2e8f0;
+}
+
+/* Video Wrapper */
+.video-section iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
